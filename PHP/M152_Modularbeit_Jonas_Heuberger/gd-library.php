@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include 'Include/head.php'; ?>
     <title>GD Library</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
 <body>
-    <div class="Picture">
-    <?php
+<?php include 'Include/navbar.php'; ?>
+
+   <div class="Picture">
+       
+<?php
 // Ein bestehendes Bild nehmen
 $img1 = imagecreatefromjpeg('Multimedia/Pictures/Döner.jpeg');
 $img2 = imagecreatefromjpeg('Multimedia/Pictures/Logo.jpeg');
-
+imagescale($img2, 100);
 $img1 = add_text($img1);
 picture($img1, $img2);
 //Funktion um Text aufs Bild zu bringen
+
 function add_text($img)
 {
     $white = imagecolorallocate($img, 255, 255, 255);
@@ -24,6 +21,7 @@ function add_text($img)
     //    Schriftgrösse, Neigung, x-Koordinate, y-Koordinate, Farbe, Schriftart, Text  
     imagettftext($img, 50, 0, 830, 315, $white, $font, 'Jonas');
     imagettftext($img, 50, 0, 920, 380, $white, $font, 'I2a'); 
+   
 
     return $img;
 }
@@ -51,10 +49,14 @@ function picture($img1, $img2)
 
     //Speicherung und Ausgabe
     imagejpeg($img1, "Multimedia/Pictures/GD_Picture.jpg", 100);
+
     echo  '<a href="gd-library.php"><img src="Multimedia/Pictures/GD_Picture.jpg"/></a>';
 }
-?>
+
+?> 
 </div>
+
+<?php include 'Include/footer.php'; ?>
 </body>
 </html>
 
