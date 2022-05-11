@@ -3,7 +3,7 @@
 <body>
 <?php include 'Include/navbar.php'; ?>
 
-   <div class="Picture">
+   <div class="Picture"> 
        
 <?php
 // Ein bestehendes Bild nehmen
@@ -54,7 +54,7 @@ function picture($img1, $img2)
 }
 
 ?> 
-</div>
+</div> 
 
 <?php include 'Include/footer.php'; ?>
 </body>

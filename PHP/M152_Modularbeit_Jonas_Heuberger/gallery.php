@@ -39,7 +39,7 @@
     <?php include 'Include/navbar.php'; ?>
 
               
-  <div class="gallery">
+  <div class="gallery"> 
         <?php 
         $count = 0;
         $thumbnails = glob("Multimedia/Thumbnails/*.jpeg");
@@ -50,6 +50,7 @@
             echo '<a href="Multimedia/Bilder/'.$count.'.jpeg"><img  src="Multimedia/Thumbnails/'.$count.'.jpeg"/></a>';
         }
         ?> 
+        </div>
     </div>
 
     <?php include 'Include/footer.php'; ?>

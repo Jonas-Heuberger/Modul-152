@@ -1,19 +1,35 @@
-.gallery {
+ .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
-    margin: 175px;
-    margin-top: 50px;
-    grid-gap: 100px;
-}
+    grid-template-columns: repeat(4, 20%);
+    grid-gap: 1%;
+    margin-left: 17%;
+    margin-top: 2.5%;
+} 
 
 .Picture {
-    margin-right: 100px;
-    height: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 } 
 
 canvas {
 	display: block;
   }
+
+  .GIF {
+      margin-top: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Subtitle p{
+    text-align: center;
+  }
+  
+  .FileSize p{
+    text-align: center;
+  }
+
+
+  
