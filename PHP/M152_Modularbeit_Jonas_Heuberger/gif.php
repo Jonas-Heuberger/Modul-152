@@ -1,8 +1,8 @@
-<?php include 'Include/head.php'; ?>
+<?php include 'Include/head.inc.php'; ?>
 
     <title>GIF</title>
 <body>
-    <?php include('Include/navbar.php'); ?>
+    <?php include('Include/navbar.inc.php'); ?>
 
     <div class="GIF">
     <div class="card">
@@ -15,6 +15,6 @@
     </div>
 </div>
 </div>
-<?php include 'Include/footer.php'; ?>
+<?php include 'Include/footer.inc.php'; ?>
 </body>
 </html>

@@ -1,7 +1,7 @@
-<?php include 'Include/head.php'; ?>
+<?php include 'Include/head.inc.php'; ?>
     <title>GD Library</title>
 <body>
-<?php include 'Include/navbar.php'; ?>
+<?php include 'Include/navbar.inc.php'; ?>
 
    <div class="Picture"> 
        
@@ -56,7 +56,7 @@ function picture($img1, $img2)
 ?> 
 </div> 
 
-<?php include 'Include/footer.php'; ?>
+<?php include 'Include/footer.inc.php'; ?>
 </body>
 </html>
 

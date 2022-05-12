@@ -1,17 +1,17 @@
-   <?php include 'Include/head.php'; ?>
+   <?php include 'Include/head.inc.php'; ?>
     <title>Video</title>
     <body>
-    <?php include 'Include/navbar.php'; ?>
+    <?php include 'Include/navbar.inc.php'; ?>
         <div>
-            <video controls width="250" height="200">
-                <source src="Multimedia/examples/flower.webm"
+            <video controls width="1440" height="705">
+                <source src="Multimedia/Videos/Code_Explanation.webm"
                         type="video/webm">
-                <source src="/media/examples/flower.mp4"
+                <source src="Multimedia/Videos/Code_Explanation.mp4"
                         type="video/mp4">
                 Dieser Browser unterstützt das HTML5 Video-Element nicht.
             </video>
         </div>
 
-        <?php include 'Include/footer.php'; ?>
+        <?php include 'Include/footer.inc.php'; ?>
     </body>
     </html>

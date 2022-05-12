@@ -32,11 +32,11 @@
     }
 ?>
 
-    <?php include 'Include/head.php'; ?>
+    <?php include 'Include/head.inc.php'; ?>
     <title>Gallery</title>
 
     <body>
-    <?php include 'Include/navbar.php'; ?>
+    <?php include 'Include/navbar.inc.php'; ?>
 
               
   <div class="gallery"> 
@@ -53,6 +53,6 @@
         </div>
     </div>
 
-    <?php include 'Include/footer.php'; ?>
+    <?php include 'Include/footer.inc.php'; ?>
     </body>
     </html>
