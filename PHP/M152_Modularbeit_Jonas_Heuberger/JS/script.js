@@ -1,8 +1,11 @@
+
+// mit der Setup Funktion lege ich die grösse und die Hintergrundfarbe fest
 function setup() {
 	createCanvas(1440, 711);
-	background(0);	 // 28 is equal to backgroundcolor in Dark Theme
+	background(0);	 
   }
   
+//   mit der draw Funktion werden die einzelnen Objekte gezeichnet
   function draw() {
 	randomPosX = random(0, 1440);
 	randomPosY = random(0, 711);
@@ -17,6 +20,7 @@ function setup() {
 	ellipse(randomPosX, randomPosY, 24, 24);	
   }
   
+//   mit der mouseDragged Funktion wird die draw Funktion zurückgesetzt
   function mousePressed() {
 	background(0, 0, 0);
   }

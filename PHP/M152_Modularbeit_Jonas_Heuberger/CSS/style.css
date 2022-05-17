@@ -1,26 +1,101 @@
- .gallery {
+/* CSS Code für meine Gallerie */
+.gallery {
+  /* hier sage ich das ich Grid verwenden will */
     display: grid;
+    /* hier sage ich das 4 Bilder zusammen in einer Reihe sind und */
     grid-template-columns: repeat(4, 20%);
+    /* hier sage ich das 1% abstand zwischen jedem element bestehen soll */
     grid-gap: 1%;
+    /* hier sage ich das ein Abstand von 17% zum linken Rand bestehen soll */
     margin-left: 17%;
+    /* hier sage ich das ein Abstand von 2.5% nach oben bestehen soll */
     margin-top: 2.5%;
 } 
 
+/* CSS Code um mein Bild in der GD Library in  */
 .Picture {
+  /* hier sage ich das ich Flexbox verwende will */
     display: flex;
+    /* hier sage ich dass das Element in der Mitte in der Flexbox sein soll */
     justify-content: center;
+    /* hier sage ich dass das Element in der Mitte sein soll */
     align-items: center;
 } 
 
+/* Nötiger CSS Code für meine Index Seite bzw meine JavaScript Animation */
 canvas {
 	display: block;
   }
 
+  /* center content of the GIF class */
+
   .GIF {
-      margin-top: 2.5%;
+    
+    /* hier sage ich das ich Flexbox verwenden will */
     display: flex;
+    /* hier sage ich dass das Element in der Mitte in der Flexbox sein soll */
     justify-content: center;
+    /* hier sage ich dass das Element in der Mitte sein soll */
     align-items: center;
+    /* hier sage ich das ich nach oben einen Abstand von 2.5% möchte */
+    margin-top: 2.5%;
+  }
+
+ /* CSS Code für meinen Text in der Lernjournal Seite */
+ .text {
+
+  /* hier sage ich das ich Flexbox verwenden will */
+   display: flex;
+    /* hier sage ich dass das Element in der Mitte in der Flexbox sein soll */
+    justify-content: center;
+    /* hier sage ich dass das Element in der Mitte sein soll */
+    align-items: center;
+    /* hier sage ich das der Text linksbündig sein soll */
+    text-align: flex-start;
+    /* hier sage ich das ich einen Abstand von 10% zum linken Rand will */
+    margin-left: 10%;
+    /* hier sage ich das ich einen Abstand von 10% zum rechten Rand will */
+    margin-right: 10%;
+    /* hier sage ich das ich einen Abstand von 1% zum oberen Rand will */
+    margin-top: 1%;
+    /* hier sage ich das ich einen Abstand von 5% zum unteren Rand will */
+    margin-bottom: 5%;
+  }
+
+  /* CSS Code für meinen Titel Lernjournal */
+  .title {
+    /* hier sage ich das ich Flexbox verwenden will */
+    display: flex;
+    /* hier sage ich das das Element in der Mitte in der Flexbox sein soll */
+    justify-content: center;
+    /* hier sage ich das das Element in der Mitte sein soll */
+    align-items: center;
+    /* hier sage ich das der Text in der Mitte sein soll */
+    text-align: center;
+    /* hier sage ich das ich nach oben einen Abstand von 2% haben will */
+    margin-top: 2%;
+  }
+
+  /* CSS Code für meine Titel im Lernjournal die das Datum enthalten */
+  .title2 {
+
+    /* hier sage ich das ich Flexbox verwenden will */
+    display: flex;
+    /* hier sage ich dass das Element in der links in der Flexbox sein soll */
+    justify-content: flex-start;
+    /* hier sage ich dass das Element links in der Flexbox sein soll */
+    align-items: flex-start;
+    /* hier sage ich das der Text linksbündig sein soll */
+    text-align: flex-start;
+    /* hier sage ich das ich einen Abstand von 2% zum oberen Rand will */
+    margin-top: 2%;
+
+    /* hier sage ich das ich einen Abstand von 10% zum linken Rand haben will */
+    margin-left: 10%;
+    /* hier lege ich die dicke der Schrift auf 600 fest */
+    font-weight: 600;
+    /* hier sage ich das ich zum rechten Rand einen Abstand von 10% haben will */
+    margin-right: 10%;
   }
 
 
